@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_line"
+        android:background="@color/background"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_catitem_cat"
+            android:text="VR"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/text_black"/>
+        <TextView
+            android:id="@+id/tv_catitem_label"
+            android:text="VR爱好者"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_black"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_catitem_price"
+            android:text="￥20"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_catitem_looktimes"
+        android:text="浏览次数26次"
+        android:textSize="@dimen/font_micro"
+        android:textColor="@color/text_gray"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_catitem_stimes"
+        android:text="导购次数2次"
+        android:textSize="@dimen/font_micro"
+        android:textColor="@color/text_gray"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_catitem_smodel"
+        android:text="实时"
+        android:textSize="@dimen/font_micro"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ib_cat_edit"
+            android:src="@drawable/icon_cat_edit"
+            android:layout_width="@dimen/image_cat"
+            android:layout_height="@dimen/image_cat" />
+        <ImageView
+            android:id="@+id/ib_cat_form"
+            android:src="@drawable/icon_cat_form"
+            android:layout_toRightOf="@id/ib_cat_edit"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_width="@dimen/image_cat"
+            android:layout_height="@dimen/image_cat" />
+        <TextView
+            android:id="@+id/tv_catitem_income"
+            android:text="收益：40元"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

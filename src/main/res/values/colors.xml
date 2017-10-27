@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7c44</color>
+    <color name="colorPrimaryDark">#ff7c44</color>
+    <color name="colorAccent">#ff7c44</color>
+
+    <color name="white">#ffffff</color>
+    <color name="background">#eeeeee</color>
+
+    <!-- 文字颜色 -->
+    <color name="text_black">#111111</color>
+    <color name="text_default">#646464</color>
+    <color name="text_gray">#969696</color>
+
+    <color name="text_ivory">#eeeeee</color>
+</resources>

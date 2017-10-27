@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smq.mode2.activity.EditCatActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <LinearLayout
+                android:id="@+id/ly_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类目"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/font_micro" />
+                <TextView
+                    android:id="@+id/tv_cat_name"
+                    android:hint="点 击 选 择"
+                    android:textColorHint="@color/text_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_small"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <LinearLayout
+                android:id="@+id/ly_edit_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标签"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/font_micro" />
+                <EditText
+                    android:id="@+id/et_cat_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_small"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <LinearLayout
+                android:id="@+id/ly_edit_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="类目经验"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/font_micro" />
+                <EditText
+                    android:id="@+id/et_cat_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_default"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:lineSpacingExtra="0dp"
+                    android:minHeight="85dp"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <Switch
+                android:id="@+id/sw_cat_cont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:checked="true"
+                android:textColor="@color/text_black"
+                android:text="能否向我追问"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_mini"
+                android:background="@color/background" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="回答时间"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/font_small"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/et_cat_smodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:text="闲时回答"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_default"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_default"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="向我提问需要支付"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/font_small"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/background"
+                    android:gravity="center_vertical"
+                    android:text="￥"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_normal" />
+
+                <EditText
+                    android:id="@+id/et_cat_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:background="@color/background"
+                    android:gravity="end|center_vertical"
+                    android:minWidth="38dp"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:text="20"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:gravity="center_vertical"
+                    android:text="元"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_normal" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_line"
+                android:background="@color/background" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/ib_cat_append"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:background="@drawable/back_addcate_button"
+                    android:gravity="center"
+                    android:text="发布"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_large" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

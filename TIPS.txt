@@ -1,0 +1,2 @@
+在项目的build文件中添加
+classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'

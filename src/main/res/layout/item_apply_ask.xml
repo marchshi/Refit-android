@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_touxiang_small_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_touxiang_default"/>
+        <TextView
+            android:id="@+id/tv_ask_name_1"
+            android:text="匿名用户"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="￥"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_ask_price_1"
+            android:text="10"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ask_cat_1"
+        android:text="一级类目 | 二级类目"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/font_micro"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_ask_cont_1"
+        android:text="我想买一台笔记本电脑，大概在5000元左右，平时办公用，偶尔玩玩游戏，希望找一款性价比好的，要有全国联保"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_apply_btn"
+        android:text="申请"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_medium"
+        android:background="@drawable/button_apply"
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_apply_time"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="分钟前"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_apply_applynum"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="人申请回答"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_apply_paynum"
+                android:layout_marginLeft="12dp"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="人已支付"
+            android:textColor="@color/text_default"
+            android:textSize="@dimen/font_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_line"
+        android:background="@color/background"
+        android:layout_marginTop="14dp"/>
+
+
+</LinearLayout>

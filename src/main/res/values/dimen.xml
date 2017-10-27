@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 一级标题字体的大小 -->
+    <dimen name="font_title_one">20sp</dimen>
+    <!-- 二级标题字体的大小 -->
+    <dimen name="font_title_two">18sp</dimen>
+    <!-- 标题右侧字体的大小 -->
+    <dimen name="font_title_right">14sp</dimen>
+    <!-- 底部标签字体的大小 -->
+    <dimen name="font_bottom">12sp</dimen>
+
+    <!--title的高度-->
+    <dimen name="toolbar_height">48dp</dimen>
+    <!-- 底部背景的高度 -->
+    <dimen name="height_bottom_back">46dp</dimen>
+    <!-- 底部标签的高度 -->
+    <dimen name="height_bottom_lable">48dp</dimen>
+    <!--列表lable的高度-->
+    <dimen name="lable_height">40dp</dimen>
+
+    <!-- 底部图片的边长 -->
+    <dimen name="image_bottom">22dp</dimen>
+    <!-- 类目里面按钮图片的边长 -->
+    <dimen name="image_cat">22dp</dimen>
+
+    <!-- small字体文本框的高度 -->
+    <dimen name="text_small">20dp</dimen>
+
+
+    <!-- 控件间常用的间距 -->
+    <dimen name="margin_large">20dp</dimen>
+    <!-- 左右边界最常用的边距 -->
+    <dimen name="margin_default">12dp</dimen>
+    <!-- 灰色线条的边距 -->
+    <dimen name="margin_line">4dp</dimen>
+    <!-- 最小的边距 -->
+    <dimen name="margin_mini">2dp</dimen>
+
+    <!--字体大小-->
+    <!--超大字体-->
+    <dimen name="font_huge">32sp</dimen>
+    <!-- 较大字体 -->
+    <dimen name="font_big">22sp</dimen>
+    <!-- 较大字体 -->
+    <dimen name="font_large">20sp</dimen>
+    <!-- 中等字体   标题-->
+    <dimen name="font_medium">18sp</dimen>
+    <!-- 正常字体   按钮-->
+    <dimen name="font_normal">16sp</dimen>
+    <!-- 较小字体   26px  28px-->
+    <dimen name="font_small">14sp</dimen>
+    <!-- 微小字体   22px-->
+    <dimen name="font_micro">12sp</dimen>
+    <!-- 微小字体   20px-->
+    <dimen name="font_mini">8sp</dimen>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    
+    <dimen name="image_large">28dp</dimen>
+
+    <!-- 较小间距 -->
+    <dimen name="margin_small">8dp</dimen>
+    <!-- 较小间距 -->
+    <dimen name="margin_medium">10dp</dimen>
+    <!-- 较小间距 -->
+    <dimen name="margin_normal">16dp</dimen>
+
+    <!-- 较小间距 -->
+    <dimen name="padding">10dp</dimen>
+
+    <!-- 较小间距 -->
+    <dimen name="list_edit_height">62dp</dimen>
+
+
+
+</resources>

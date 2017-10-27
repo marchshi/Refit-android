@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的背景图片 -->
+    <item android:state_window_focused="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <solid android:color="@color/colorPrimary" />
+            <size android:width= "338dp"
+                android:height= "46dp" />
+        </shape>
+    </item>
+    <!--激活时的背景颜色-->
+    <item android:state_activated="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <!--填充颜色为白色-->
+            <solid android:color="@color/background" />
+            <size android:width= "336dp"
+                android:height= "46dp" />
+        </shape>
+    </item>
+</selector>

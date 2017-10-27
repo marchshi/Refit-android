@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_line"
+        android:background="@color/background"/>
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_touxiang_small"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_touxiang_default"/>
+        <TextView
+            android:id="@+id/tv_ask_name"
+            android:text="匿名用户"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="￥"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_ask_price"
+            android:text="10"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_ask_cont"
+        android:text="我想买一台笔记本电脑，大概在5000元左右，平时办公用，偶尔玩玩游戏，希望找一款性价比好的，要有全国联保"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_black"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:maxHeight="58dp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_ask_time"
+            android:text="0"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="分钟前"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_ask_apply"
+            android:text="0"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="人已申请"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_ask_pay"
+            android:text="0"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="人已支付"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

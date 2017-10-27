@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smq.mode2.fragment.MainFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="52dp">
+            <FrameLayout
+                android:id="@+id/bt_search_main"
+                android:background="#ffa37b"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="36dp">
+                <ImageView
+                    android:layout_margin="7dp"
+                    android:src="@drawable/icon_search_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="请 输 入 你 想 要 导 购 的 物 品"
+                    android:textSize="@dimen/font_normal"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/lv_main_ask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_main_ask"
+        android:text="提问"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_big"
+        android:gravity="center"
+        android:background="@drawable/back_ask"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.smq.mode2.activity.EditAskActivity">
+
+    <EditText
+        android:id="@+id/et_ask_desc"
+        android:hint="请详细描述您的需求，以便导购员能够准求的为您提供服务，提出问题后会有导购向您投出简历以供您选择。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_default"
+        android:background="@null"
+        android:gravity="top"
+        android:lineSpacingExtra="0dp"
+        android:minHeight="85dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_small" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_line"
+        android:background="@color/background"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="导购商品的类目"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_small"/>
+        <TextView
+            android:id="@+id/tv_ask_cat"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColorHint="@color/text_gray"
+            android:hint="点 击 选 择"
+            android:gravity="center"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="向我提问需要支付"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/font_small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/background"
+            android:gravity="center_vertical"
+            android:text="￥"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <EditText
+            android:id="@+id/et_ask_price"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@color/background"
+            android:gravity="end|center_vertical"
+            android:minWidth="38dp"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:text="10"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:gravity="center_vertical"
+            android:text="元"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_normal" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_line"
+        android:background="@color/background"/>
+    <Switch
+        android:id="@+id/sw_ask_sta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:checked="true"
+        android:textColor="@color/text_black"
+        android:text="提问开启中"/>
+
+    <Switch
+        android:id="@+id/sw_ask_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:checked="false"
+        android:textColor="@color/text_black"
+        android:text="匿名"/>
+</LinearLayout>

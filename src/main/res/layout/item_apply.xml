@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_apply_item_touxiang"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_touxiang_default"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_apply_item_name"
+            android:text="姓名"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_apply_item_label"
+            android:text="类目标签"
+            android:textSize="@dimen/font_normal"
+            android:textColor="@color/text_black"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_apply_item_desc"
+            android:text="类目简介：两行"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_black"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_apply_item_stimes"
+                android:text="0"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/font_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="个优质服务"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/font_micro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tv_apply_item_price"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_alignParentRight="true"
+            android:text="20"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/tv_apply_item_price"
+            android:text="￥"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

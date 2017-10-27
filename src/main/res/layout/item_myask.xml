@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="我有一头小毛驴从来也不骑，有一天我即兴骑它去赶集。"
+        android:textSize="@dimen/font_normal"
+        android:textColor="@color/text_black"
+        android:id="@+id/tv_myask_cont"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_myask_mins"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="分钟前提问"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_myask_apply"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="为导购已申请"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="0"
+            android:id="@+id/tv_myask_pay"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="位导购已支付"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="￥"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginLeft="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="20"
+            android:id="@+id/tv_myask_price"
+            android:textSize="@dimen/font_large"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"/>
+</LinearLayout>

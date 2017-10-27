@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">mode4</string>
+    <!--tab-->
+    <string name="main_activity_home_text">首页</string>
+    <string name="main_activity_order_text">订单</string>
+    <string name="main_activity_admin_text">管理</string>
+    <string name="main_activity_my_text">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_edit">EditActivity</string>
+</resources>
