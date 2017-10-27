@@ -3,15 +3,32 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-
-    <ImageView
-        android:id="@+id/img_apply_item_touxiang"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="@dimen/margin_default"
-        android:layout_marginLeft="@dimen/margin_default"
+    
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/icon_touxiang_default"/>
+        android:layout_height="match_parent">
+        <com.smq.demo5.view.CircleImageView
+            android:id="@+id/img_apply_item_touxiang"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_touxiang_shouye"/>
+        <TextView
+            android:id="@+id/tv_apply_status"
+            android:text="新申请"
+            android:textSize="@dimen/font_mini"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/draw_apply_status"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
     <LinearLayout
         android:orientation="vertical"
         android:layout_weight="1"
@@ -20,7 +37,7 @@
         <TextView
             android:id="@+id/tv_apply_item_name"
             android:text="姓名"
-            android:textSize="@dimen/font_micro"
+            android:textSize="@dimen/font_small"
             android:textColor="@color/text_black"
             android:layout_marginTop="@dimen/margin_default"
             android:layout_width="wrap_content"
@@ -28,35 +45,65 @@
         <TextView
             android:id="@+id/tv_apply_item_label"
             android:text="类目标签"
-            android:textSize="@dimen/font_normal"
+            android:textSize="@dimen/font_micro"
             android:textColor="@color/text_black"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/ly_cat_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_small"
+            android:orientation="horizontal"
+            android:visibility="visible">
+            <TextView
+                android:id="@+id/tv_cat_FirstCatName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一级类目"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_mini" />
+            <View
+                android:layout_width="0.1dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:background="@color/colorPrimary" />
+            <TextView
+                android:id="@+id/tv_cat_SecondCatName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_weight="1"
+                android:text="二级类目"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/font_mini" />
+        </LinearLayout>
         <TextView
             android:id="@+id/tv_apply_item_desc"
             android:text="类目简介：两行"
             android:textSize="@dimen/font_micro"
-            android:textColor="@color/text_black"
-            android:layout_marginTop="10dp"
+            android:textColor="@color/text_default"
+            android:layout_marginTop="@dimen/margin_small"
             android:layout_width="match_parent"
-            android:layout_height="30dp" />
+            android:layout_height="28dp" />
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/tv_apply_item_stimes"
                 android:text="0"
-                android:textColor="@color/text_gray"
+                android:textColor="@color/colorSecond"
                 android:textSize="@dimen/font_micro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
                 android:text="个优质服务"
-                android:textColor="@color/text_gray"
+                android:textColor="@color/colorSecond"
                 android:textSize="@dimen/font_micro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -64,25 +111,25 @@
     </LinearLayout>
     <RelativeLayout
         android:orientation="horizontal"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp">
         <TextView
             android:id="@+id/tv_apply_item_price"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_default"
             android:layout_marginRight="@dimen/margin_default"
             android:layout_alignParentRight="true"
-            android:text="20"
-            android:textSize="@dimen/font_micro"
-            android:textColor="@color/colorPrimary"
+            android:text="999"
+            android:textSize="@dimen/font_default"
+            android:textColor="@color/text_red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/margin_default"
             android:layout_toLeftOf="@id/tv_apply_item_price"
             android:text="￥"
-            android:textSize="@dimen/font_micro"
-            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/font_default"
+            android:textColor="@color/text_red"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </RelativeLayout>

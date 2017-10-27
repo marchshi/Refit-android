@@ -2,11 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.smq.mode2.fragment.GetGuideFragment">
+    tools:context="com.smq.demo5.fragment.GetGuideFragment">
 
-    <TextView
+    <ListView
+        android:id="@+id/lv_order_get_guide"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/margin_small"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="找人导购" />
+        android:layout_height="match_parent">
+    </ListView>
 
 </FrameLayout>

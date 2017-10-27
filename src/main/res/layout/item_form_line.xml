@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/et_form_add"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:hint="请详细描述您的需求"
+        android:gravity="top|left"
+        android:padding="8dp"
+        android:textSize="10sp"
+        android:textColorHint="#646464"
+        android:background="@drawable/draw_form_line"
+        android:layout_width="match_parent"
+        android:layout_height="79dp" />
+</LinearLayout>

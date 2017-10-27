@@ -2,11 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.smq.mode2.fragment.HisOrderFragment">
+    tools:context="com.smq.demo5.fragment.HisOrderFragment">
 
-    <TextView
+    <ListView
+        android:id="@+id/lv_order_his"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/margin_small"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="历史导购" />
+        android:layout_height="match_parent">
+    </ListView>
 
 </FrameLayout>

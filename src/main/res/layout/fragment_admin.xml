@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.smq.demo5.fragment.MainFragment">
+
+    <include layout="@layout/title_bar" />
+
+    <ListView
+        android:id="@+id/lv_cat_admin"
+        android:divider="@color/background"
+        android:dividerHeight="@dimen/margin_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+</LinearLayout>

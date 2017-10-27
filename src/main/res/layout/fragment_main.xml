@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_search_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:layout_marginRight="@dimen/margin_default"
+                android:layout_marginTop="@dimen/margin_small"
+                android:background="@drawable/draw_search_main">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_small"
+                    android:src="@drawable/icon_search_main" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="请 输 入 你 想 要 导 购 的 物 品"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/font_small" />
+            </FrameLayout>
+        </LinearLayout>
+        <com.smq.demo5.view.RefreshableView
+            android:id="@+id/refresh_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_ask_main"
+                android:dividerHeight="@dimen/margin_line"
+                android:divider="@color/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.smq.demo5.view.RefreshableView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ask_main"
+        android:text="提问"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:gravity="center"
+        android:background="@drawable/draw_ask_circle"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

@@ -1,59 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@color/white"
-    tools:context="com.smq.mode2.activity.EditAskActivity">
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar" />
 
     <EditText
         android:id="@+id/et_ask_desc"
         android:hint="请详细描述您的需求，以便导购员能够准求的为您提供服务，提出问题后会有导购向您投出简历以供您选择。"
+        android:textColorHint="@color/text_gray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
         android:background="@null"
         android:gravity="top"
         android:lineSpacingExtra="0dp"
-        android:minHeight="85dp"
+        android:minHeight="140dp"
         android:textColor="@color/text_black"
-        android:textSize="@dimen/font_small" />
+        android:textSize="@dimen/font_default" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"/>
+        <TextView
+            android:id="@+id/tv_ask_desc_num"
+            android:text="0"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="/255"
+            android:textSize="@dimen/font_micro"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_line"
         android:background="@color/background"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_default"
-        android:layout_marginLeft="@dimen/margin_default"
-        android:layout_marginRight="@dimen/margin_default"
-        android:layout_marginTop="@dimen/margin_default"
+        android:layout_height="48dp"
         android:orientation="horizontal">
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_default"
             android:layout_weight="1"
-            android:text="导购商品的类目"
+            android:text="选择导购类目"
+            android:textStyle="bold"
             android:textColor="@color/text_black"
             android:textSize="@dimen/font_small"/>
-        <TextView
-            android:id="@+id/tv_ask_cat"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="24dp"
-            android:layout_gravity="center_vertical"
-            android:background="@null"
-            android:textColorHint="@color/text_gray"
-            android:hint="点 击 选 择"
-            android:gravity="center"
-            android:textSize="@dimen/font_normal"
-            android:textColor="@color/colorPrimary"/>
+        <FrameLayout
+            android:id="@+id/fl_ask_cat"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp">
+            <TextView
+                android:id="@+id/tv_cat_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:hint="请选择导购类目"
+                android:textColorHint="@color/text_gray"
+                android:textSize="@dimen/font_small"
+                android:visibility="visible" />
 
+            <LinearLayout
+                android:id="@+id/ly_cat_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_default"
+                android:orientation="horizontal"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/tv_cat_FirstCatName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="一级类目"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_small" />
+                <View
+                    android:layout_width="0.1dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:background="@color/colorPrimary" />
+                <TextView
+                    android:id="@+id/tv_cat_SecondCatName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_weight="1"
+                    android:text="二级类目"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/font_small" />
+            </LinearLayout>
+        </FrameLayout>
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,7 +133,8 @@
             android:layout_weight="1"
             android:text="向我提问需要支付"
             android:textColor="@color/text_black"
-            android:textSize="@dimen/font_small"/>
+            android:textSize="@dimen/font_small"
+            android:textStyle="bold" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="24dp"
@@ -77,21 +142,19 @@
             android:background="@color/background"
             android:gravity="center_vertical"
             android:text="￥"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/font_normal" />
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/font_default" />
 
         <EditText
-            android:id="@+id/et_ask_price"
+            android:id="@+id/et_ask_ref_price"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:background="@color/background"
             android:gravity="end|center_vertical"
             android:minWidth="38dp"
-            android:singleLine="true"
-            android:numeric="integer"
-            android:text="10"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/font_normal" />
+            android:text="20"
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/font_default" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,28 +163,39 @@
             android:layout_marginLeft="@dimen/margin_small"
             android:gravity="center_vertical"
             android:text="元"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/font_normal" />
+            android:textColor="@color/text_red"
+            android:textSize="@dimen/font_default" />
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/margin_line"
         android:background="@color/background"/>
-    <Switch
-        android:id="@+id/sw_ask_sta"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_height="48dp"
         android:layout_marginLeft="@dimen/margin_default"
         android:layout_marginRight="@dimen/margin_default"
-        android:layout_marginTop="@dimen/margin_default"
-        android:checked="true"
-        android:textColor="@color/text_black"
-        android:text="提问开启中"/>
-
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="查看问答明细及责任申明"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/icon_to_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background"/>
     <Switch
-        android:id="@+id/sw_ask_no"
+        android:id="@+id/sw_ask_ano"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/margin_default"
@@ -130,5 +204,42 @@
         android:layout_marginTop="@dimen/margin_default"
         android:checked="false"
         android:textColor="@color/text_black"
-        android:text="匿名"/>
+        android:text="匿名"
+        android:thumb="@drawable/green_thumb"
+        android:track="@drawable/track"
+        />
+    <Switch
+        android:id="@+id/sw_ask_opening"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_default"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        android:checked="true"
+        android:textColor="@color/text_black"
+        android:text="开启提问"
+        android:thumb="@drawable/green_thumb"
+        android:track="@drawable/track" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background">
+        <TextView
+            android:id="@+id/tv_ask_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="发布"
+            android:background="@drawable/draw_cat_edit_add"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 </LinearLayout>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.smq.mode2.activity.FirstOneActivity">
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
     <View
         android:layout_width="match_parent"
         android:layout_height="5dp"
@@ -13,36 +15,51 @@
         android:orientation="vertical"
         android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="150dp">
-        <TextView
-            android:layout_marginLeft="11dp"
-            android:layout_marginTop="44dp"
-            android:text="姓名"
-            android:textSize="14sp"
-            android:textColor="@color/text_default"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="46dp"
             android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginLeft="@dimen/margin_default"
+                android:text="姓名"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text=" *"
+                android:textSize="14sp"
+                android:textColor="@color/colorSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="45dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/et_first_name"
-                android:textSize="16sp"
+                android:id="@+id/et_login_name"
+                android:textSize="@dimen/font_default"
                 android:textColor="@color/text_black"
+                android:maxLength="16"
                 android:focusable="true"
                 android:background="@null"
+                android:gravity="center_vertical"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="28dp" />
             <TextView
-                android:id="@+id/tv_first_name_num"
-                android:textColor="@color/text_default"
-                android:textSize="12sp"
-                android:text="6"
+                android:id="@+id/tv_login_name_num"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/font_micro"
+                android:text="16"
+                android:layout_marginBottom="2dp"
                 android:layout_gravity="bottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -54,15 +71,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
-            android:id="@+id/tv_first_next_one"
+            android:id="@+id/tv_login_next_one"
             android:text="下一步"
             android:gravity="center"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:layout_marginLeft="11dp"
-            android:layout_marginRight="11dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/next_button_big"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/draw_login_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

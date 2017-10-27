@@ -1,77 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
-    tools:context="com.smq.mode2.activity.LoginActivity">
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/margin_line"
-        android:background="@color/background"/>
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="28dp"
-        android:layout_marginTop="36dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
         android:gravity="center_vertical"
         android:orientation="horizontal">
         <TextView
-            android:text="手机号"
-            android:textSize="@dimen/font_normal"
+            android:text="手机号："
+            android:textSize="@dimen/font_default"
             android:textColor="@color/text_default"
-            android:layout_marginLeft="@dimen/margin_default"
-            android:layout_marginRight="@dimen/margin_default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
-            android:id="@+id/et_sjh"
+            android:id="@+id/et_login_sjh"
             android:layout_weight="1"
             android:layout_width="0dp"
-            android:layout_height="28dp"
+            android:layout_height="40dp"
             android:textColor="@color/text_default"
-            android:textSize="@dimen/font_normal"
             android:background="@null"
             android:inputType="numberSigned"/>
 
         <TextView
-            android:id="@+id/tv_get"
+            android:id="@+id/tv_login_get"
             android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="发送验证码"
             android:textSize="@dimen/font_micro"
-            android:textColor="@color/text_default"
+            android:textColor="@color/text_gray"
             android:gravity="center"
-            android:background="@drawable/button_yzm"
-            android:layout_marginRight="@dimen/margin_default"
-            />
+            android:background="@drawable/draw_login_get" />
     </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/background"
-        android:layout_marginTop="6dp"
         />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="28dp"
+        android:layout_height="40dp"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="29dp">
         <TextView
-            android:text="验证码"
-            android:textSize="@dimen/font_normal"
+            android:text="验证码："
+            android:textSize="@dimen/font_default"
             android:textColor="@color/text_default"
-            android:layout_marginLeft="@dimen/margin_default"
-            android:layout_marginRight="@dimen/margin_default"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <EditText
-            android:id="@+id/et_yzm"
+            android:id="@+id/et_login_yzm"
             android:layout_width="200dp"
-            android:layout_height="28dp"
+            android:layout_height="40dp"
             android:textColor="@color/text_default"
-            android:textSize="@dimen/font_normal"
+            android:textSize="@dimen/font_default"
             android:background="@null"
             android:inputType="numberSigned"/>
     </LinearLayout>
@@ -79,28 +72,29 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/background"
-        android:layout_marginTop="6dp"
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="未注册过的手机号将会直接注册成由之账户"
-        android:textSize="@dimen/font_micro"
+        android:textSize="@dimen/font_mini"
+        android:textColor="@color/text_gray"
         android:layout_marginLeft="@dimen/margin_default"
         android:layout_marginTop="30dp"
         />
 
     <TextView
-        android:id="@+id/tv_login"
+        android:id="@+id/tv_login_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/next_button_big"
+        android:background="@drawable/draw_login_login"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="@dimen/margin_default"
         android:layout_marginRight="@dimen/margin_default"
         android:gravity="center"
         android:text="登  陆"
-        android:textColor="@color/text_default">
+        android:textSize="@dimen/font_large"
+        android:textColor="@color/text_gray">
     </TextView>
 
     <LinearLayout
@@ -112,29 +106,28 @@
         <View
             android:layout_width="100dp"
             android:layout_height="1dp"
-            android:background="@color/background"/>
+            android:background="@color/text_gray"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="便捷登陆"
-            android:textSize="15dp"
-            android:textColor="#969696"
+            android:textSize="@dimen/font_small"
+            android:textColor="@color/text_gray"
             android:layout_marginLeft="11dp"
             android:layout_marginRight="11dp"/>
         <View
             android:layout_width="100dp"
             android:layout_height="1dp"
-            android:background="@color/background"/>
+            android:background="@color/text_gray"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="38dp"
         android:orientation="horizontal"
         android:layout_gravity="center">
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -144,18 +137,17 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"/>
             <TextView
-                android:layout_marginTop="15dp"
-                android:textSize="15sp"
-                android:textColor="#969696"
+                android:layout_marginTop="12dp"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_gray"
                 android:text="QQ登陆"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30dp"
+            android:layout_marginLeft="42dp"
             android:orientation="vertical">
             <ImageView
                 android:src="@drawable/img_login_weixin"
@@ -163,30 +155,29 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"/>
             <TextView
-                android:layout_marginTop="15dp"
-                android:textSize="15sp"
-                android:textColor="#969696"
+                android:layout_marginTop="12dp"
+                android:textSize="@dimen/font_small"
+                android:textColor="@color/text_gray"
                 android:text="微信登陆"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         >
         <TextView
-            android:textColor="#969696"
-            android:textSize="10dp"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/font_mini"
             android:text="注册表明您同意"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <TextView
-            android:textColor="#ff7c44"
-            android:textSize="10dp"
+            android:textColor="@color/colorSecond"
+            android:textSize="@dimen/font_mini"
             android:text="由之用户协议"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ly_my_before"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="194dp">
+    <com.smq.demo5.view.CircleImageView
+            android:layout_marginTop="30dp"
+            android:src="@drawable/icon_touxiang_zhuce"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    <TextView
+        android:text="登陆"
+        android:textSize="16dp"
+        android:textColor="@color/text_gray"
+        android:gravity="center"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/draw_login_login_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

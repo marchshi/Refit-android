@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <com.smq.demo5.view.CircleImageView
+        android:id="@+id/cimg_apply_my_touxiang"
+        android:src="@drawable/icon_touxiang_shouye"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:text="吴彦祖"
+        android:id="@+id/tv_apply_my_name"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_mini"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/text_black"
+        android:layout_marginLeft="@dimen/margin_mini"
+        android:layout_width="0.1dp"
+        android:layout_height="12dp"/>
+    <TextView
+        android:text="专业导购二十年"
+        android:id="@+id/tv_apply_my_label"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/font_mini"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="12dp"/>
+    <TextView
+        android:text="新申请"
+        android:id="@+id/tv_apply_my_new"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/font_mini"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_default"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
